@@ -1,0 +1,136 @@
+---
+// YouTube Embed Component
+---
+
+<div class="youtube-container">
+  <div class="video-placeholder">
+    <div class="placeholder-content">
+      <div class="play-button">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="30" fill="rgba(255, 255, 255, 0.9)"/>
+          <path d="M23 20v20l17-10-17-10z" fill="#1a1a1a"/>
+        </svg>
+      </div>
+      <h4>Latest Video: "5 YA Thrillers That Will Keep You Up All Night"</h4>
+      <p>Join Marina as she reviews her favorite page-turners and shares what makes a great thriller!</p>
+    </div>
+  </div>
+  <div class="video-info">
+    <h4>Bookishly Marina</h4>
+    <p>Follow Marina's BookTube journey as she reviews YA thrillers, shares writing tips, and discusses her creative process. New videos every week!</p>
+    <div class="channel-stats">
+      <span>📚 150+ Books Reviewed</span>
+      <span>🎥 50+ Videos</span>
+      <span>👥 Growing Community</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .youtube-container {
+    background: var(--color-bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+
+  .video-placeholder {
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, rgba(45, 90, 61, 0.3) 0%, rgba(74, 107, 138, 0.3) 100%);
+    background-image: url('https://images.pexels.com/photos/1319850/pexels-photo-1319850.jpeg?auto=compress&cs=tinysrgb&w=800&h=450&fit=crop');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .video-placeholder:hover {
+    transform: scale(1.02);
+  }
+
+  .video-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .placeholder-content {
+    text-align: center;
+    z-index: 1;
+    color: white;
+    padding: 2rem;
+  }
+
+  .play-button {
+    margin-bottom: 1rem;
+    transition: var(--transition);
+  }
+
+  .play-button:hover {
+    transform: scale(1.1);
+  }
+
+  .placeholder-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .placeholder-content p {
+    opacity: 0.9;
+  }
+
+  .video-info {
+    padding: 2rem;
+  }
+
+  .video-info h4 {
+    color: var(--color-accent-light);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .video-info p {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .channel-stats {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .channel-stats span {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .placeholder-content {
+      padding: 1rem;
+    }
+
+    .placeholder-content h4 {
+      font-size: 1rem;
+    }
+
+    .video-info {
+      padding: 1.5rem;
+    }
+
+    .channel-stats {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>

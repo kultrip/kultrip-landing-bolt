@@ -1,0 +1,125 @@
+---
+// Featured Book Component
+---
+
+<div class="featured-book">
+  <h2 class="section-title">Featured Book</h2>
+  <div class="book-showcase">
+    <div class="book-cover">
+      <img src="https://images.pexels.com/photos/1831744/pexels-photo-1831744.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="The Infamous Disappearances of Helena Cross book cover" />
+    </div>
+    <div class="book-details">
+      <h3>The Infamous Disappearances of Helena Cross</h3>
+      <p class="book-tagline">Book 1 in the Eastmoor Chronicles</p>
+      <p class="book-description">
+        When Helena Cross vanishes without a trace from the small town of Eastmoor, her best friend Sofia refuses to believe the police theory that she simply ran away. As Sofia digs deeper into Helena's disappearance, she uncovers a web of secrets that threatens to tear the town apart.
+      </p>
+      <p class="book-description">
+        But Sofia isn't the only one looking for answers. Someone in Eastmoor doesn't want the truth to come out—and they'll do anything to keep it buried.
+      </p>
+      <div class="book-actions">
+        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+        <a href="/books" class="btn btn-secondary">Read Sample Chapter</a>
+      </div>
+      <div class="book-meta">
+        <span>Ages 12+</span>
+        <span>•</span>
+        <span>YA Thriller</span>
+        <span>•</span>
+        <span>280 pages</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .featured-book {
+    text-align: center;
+  }
+
+  .book-showcase {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .book-cover {
+    position: relative;
+  }
+
+  .book-cover img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-hover);
+    transition: var(--transition);
+  }
+
+  .book-cover img:hover {
+    transform: scale(1.05);
+  }
+
+  .book-details {
+    text-align: left;
+  }
+
+  .book-details h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+
+  .book-tagline {
+    font-size: 1.1rem;
+    color: var(--color-accent-light);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  .book-description {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+  }
+
+  .book-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .book-meta {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+
+  .book-meta span {
+    margin: 0 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .book-showcase {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .book-details {
+      text-align: center;
+    }
+
+    .book-details h3 {
+      font-size: 1.5rem;
+    }
+
+    .book-actions {
+      justify-content: center;
+    }
+  }
+</style>

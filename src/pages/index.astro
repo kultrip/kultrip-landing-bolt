@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FeaturedBook from '../components/FeaturedBook.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
+---
+
+<Layout title="Marina Costa - YA Thriller Author & BookTuber">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Marina Costa</h1>
+      <p class="hero-hook">"Secrets don't stay buried forever."</p>
+      <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--color-text-muted);">
+        12-year-old multilingual YA thriller writer and BookTuber from Mallorca, Spain
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/books" class="btn">Discover My Books</a>
+        <a href="/watch" class="btn btn-secondary">Watch BookTube</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <FeaturedBook />
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--color-bg-light);">
+    <div class="container">
+      <h2 class="section-title">Latest from BookTube</h2>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <YouTubeEmbed />
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="/watch" class="btn">Watch More Videos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Why Readers Love Marina's Stories</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 style="color: var(--color-accent-light); margin-bottom: 1rem;">Authentic Teen Voice</h3>
+          <p>Marina writes from the heart of the teenage experience, creating characters that feel real and relatable.</p>
+        </div>
+        <div class="card">
+          <h3 style="color: var(--color-accent-light); margin-bottom: 1rem;">Multilingual Perspective</h3>
+          <p>Growing up across Brazil, Switzerland, and Spain brings unique cultural depth to her storytelling.</p>
+        </div>
+        <div class="card">
+          <h3 style="color: var(--color-accent-light); margin-bottom: 1rem;">Page-Turning Mysteries</h3>
+          <p>Each chapter ends with a cliffhanger that keeps readers guessing until the very last page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

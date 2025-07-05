@@ -1,0 +1,333 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Marina's Books - YA Thriller Series" description="Discover Marina Costa's thrilling YA novels, including The Infamous Disappearances of Helena Cross and upcoming releases.">
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Marina's Books</h1>
+      
+      <div class="current-book">
+        <div class="book-display">
+          <div class="book-cover-large">
+            <img src="https://images.pexels.com/photos/1831744/pexels-photo-1831744.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop" alt="The Infamous Disappearances of Helena Cross" />
+          </div>
+          <div class="book-info">
+            <h2>The Infamous Disappearances of Helena Cross</h2>
+            <p class="series-info">Book 1 in the Eastmoor Chronicles</p>
+            
+            <div class="book-blurb">
+              <p>
+                Helena Cross was the kind of girl who made everything look easy. Perfect grades, perfect smile, perfect life in the small town of Eastmoor. Until the day she disappeared without a trace.
+              </p>
+              <p>
+                Sofia Martinez, Helena's best friend, refuses to believe the police theory that Helena simply ran away. She knows Helena better than anyone—or so she thought. As Sofia digs deeper into her friend's disappearance, she uncovers secrets that make her question everything she knew about Helena, about Eastmoor, and about herself.
+              </p>
+              <p>
+                But Sofia isn't the only one looking for answers. Someone in Eastmoor has been keeping secrets for a long time, and they'll do anything to make sure those secrets stay buried—even if it means Sofia might be the next to disappear.
+              </p>
+            </div>
+
+            <div class="book-details">
+              <div class="detail-item">
+                <strong>Genre:</strong> YA Thriller/Mystery
+              </div>
+              <div class="detail-item">
+                <strong>Age:</strong> 12+
+              </div>
+              <div class="detail-item">
+                <strong>Pages:</strong> 280
+              </div>
+              <div class="detail-item">
+                <strong>Setting:</strong> Eastmoor, fictional small town
+              </div>
+            </div>
+
+            <div class="book-actions">
+              <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+              <button class="btn btn-secondary" onclick="toggleSample()">Read Sample Chapter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--color-bg-light);">
+    <div class="container">
+      <h2 class="section-title">Sample Chapter</h2>
+      <div class="sample-chapter" id="sampleChapter" style="display: none;">
+        <div class="chapter-content">
+          <h3>Chapter 1: The Day Everything Changed</h3>
+          
+          <p>
+            The last time I saw Helena Cross, she was laughing at something stupid Marcus had said during lunch, her head thrown back in that way that made her look like she was posing for a magazine cover. Her dark hair caught the sunlight streaming through the cafeteria windows, and for a moment, she looked almost ethereal—like she might disappear if you blinked too hard.
+          </p>
+          
+          <p>
+            I should have paid more attention to that thought.
+          </p>
+          
+          <p>
+            "Sofia, are you even listening?" Helena nudged my shoulder, bringing me back to the present. Her green eyes sparkled with mischief, the same look she'd had since we were seven and she convinced me to sneak into Old Man Patterson's apple orchard.
+          </p>
+          
+          <p>
+            "Sorry, just thinking about the history test tomorrow," I lied, stabbing at my salad. The truth was, I'd been thinking about how different Helena seemed lately. Distracted. Like she was keeping secrets.
+          </p>
+          
+          <p>
+            In a town like Eastmoor, secrets were currency. Everyone had them, traded them, used them to climb the invisible social ladder that somehow mattered more than anything else when you were sixteen. But Helena had never been one for secrets. She was an open book—beautiful, popular, confident in that effortless way that made everyone want to be around her.
+          </p>
+          
+          <p>
+            "Don't worry about Peterson's test," she said, flipping her hair over her shoulder. "You always think you're going to fail, and you always get an A."
+          </p>
+          
+          <p>
+            "That's because I worry about it," I pointed out.
+          </p>
+          
+          <p>
+            Helena grinned. "See? Worrying works for you. I prefer the wing-it approach."
+          </p>
+          
+          <p>
+            That was Helena in a nutshell—confident that everything would work out, that the universe was on her side. I envied that about her. I was the type who made backup plans for my backup plans, who lay awake at night wondering if I'd said the wrong thing or if people actually liked me or just tolerated me because I was Helena's best friend.
+          </p>
+          
+          <div class="chapter-end">
+            <p><em>Want to read more? Get the full book to discover what happens when Helena disappears and Sofia's world turns upside down...</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Coming Soon</h2>
+      <div class="upcoming-books">
+        <div class="upcoming-book">
+          <div class="upcoming-cover">
+            <div class="cover-placeholder">
+              <span>Book 2</span>
+            </div>
+          </div>
+          <div class="upcoming-info">
+            <h3>The Eastmoor Chronicles: Book 2</h3>
+            <p class="coming-soon">Coming 2026</p>
+            <p>
+              The mystery deepens as Sofia uncovers more secrets about Eastmoor's past. But some truths are more dangerous than the lies they replace.
+            </p>
+          </div>
+        </div>
+        
+        <div class="upcoming-book">
+          <div class="upcoming-cover">
+            <div class="cover-placeholder">
+              <span>Book 3</span>
+            </div>
+          </div>
+          <div class="upcoming-info">
+            <h3>The Eastmoor Chronicles: Book 3</h3>
+            <p class="coming-soon">Coming 2027</p>
+            <p>
+              The thrilling conclusion to the Eastmoor Chronicles. All secrets will be revealed, but will Sofia survive to tell the tale?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .current-book {
+    margin-bottom: 4rem;
+  }
+
+  .book-display {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .book-cover-large img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-hover);
+  }
+
+  .book-info h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+
+  .series-info {
+    font-size: 1.1rem;
+    color: var(--color-accent-light);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  .book-blurb p {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .book-details {
+    background: var(--color-bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+
+  .detail-item {
+    margin-bottom: 0.5rem;
+    color: var(--color-text-muted);
+  }
+
+  .detail-item strong {
+    color: var(--color-accent-light);
+  }
+
+  .book-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .sample-chapter {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .chapter-content {
+    background: var(--color-bg-card);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .chapter-content h3 {
+    color: var(--color-accent-light);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .chapter-content p {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-indent: 2rem;
+  }
+
+  .chapter-end {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--color-border);
+  }
+
+  .chapter-end p {
+    color: var(--color-accent-light);
+    font-style: italic;
+    text-indent: 0;
+  }
+
+  .upcoming-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+
+  .upcoming-book {
+    display: flex;
+    gap: 1.5rem;
+    background: var(--color-bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .upcoming-cover {
+    flex-shrink: 0;
+  }
+
+  .cover-placeholder {
+    width: 100px;
+    height: 150px;
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-blue) 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  .upcoming-info h3 {
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .coming-soon {
+    color: var(--color-accent-light);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .upcoming-info p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .book-display {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .book-display .book-info {
+      text-align: left;
+    }
+
+    .chapter-content {
+      padding: 2rem;
+    }
+
+    .upcoming-book {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .upcoming-info {
+      text-align: left;
+    }
+  }
+</style>
+
+<script>
+  function toggleSample() {
+    const sampleChapter = document.getElementById('sampleChapter');
+    if (sampleChapter.style.display === 'none') {
+      sampleChapter.style.display = 'block';
+      sampleChapter.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      sampleChapter.style.display = 'none';
+    }
+  }
+</script>
